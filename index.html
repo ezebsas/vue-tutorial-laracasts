@@ -9,8 +9,17 @@
   </head>
   <body>
     <div id="root" class="container">
-      <modal v-if="showModal" @close="showModal = false">asdf as fsr dfg f dfg 57 56 dfg </modal>
-      <button type="button" @click="showModal = true">Mostrar modal</button>
+      <tabs>
+        <tab name="About Us" :selected="true">
+          <h1>Contenido de About Us</h1>
+        </tab>
+        <tab name="About Our Culture">
+          <h1>Contenido de About Our Culture</h1>
+        </tab>
+        <tab name="About">
+          <h1>Contenido de About</h1>
+        </tab>
+      </tabs>
 
     </div>
 
